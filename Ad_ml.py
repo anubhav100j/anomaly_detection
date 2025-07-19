@@ -3,12 +3,8 @@ import pandas as pd
 import glob
 import os
 
-# 1. Set the path to your local dataset directory.
-# `os.path.expanduser` correctly resolves "~" to your home directory.
-data_dir = "/Users/aj/Documents/Projects/Anomaly Detection/dataset/"
-
-# 2. Find all data files in that directory.
-#data_file = "/Users/aj/Documents/Projects/Anomaly Detection/dataset/logs-parquet_part2.parquet"
+# Use a relative path to make the project portable
+data_dir = "dataset/"
 
 all_files = glob.glob(os.path.join(data_dir, "*.parquet"))
 
