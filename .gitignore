@@ -1,13 +1,33 @@
-# Python virtual environment
-venv/
-.venv/
-env/
-.env/
-
-# Python cache
+# Create/overwrite .gitignore with these contents
+echo ".DS_Store
 __pycache__/
-
-# IDE folders
-.vscode/
-.idea/
-dataset/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.ipynb_checkpoints
+*.parquet
+*.csv
+*.pkl
+*.h5
+*.pt
+*.pth
+*.joblib
+*.pyc
+.ipynb
+dataset/" > .gitignore
